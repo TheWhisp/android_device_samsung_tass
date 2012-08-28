@@ -13,20 +13,9 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/tass/tass-vendor.mk)
+$(call inherit-product, vendor/samsung/tass/vendor_blobs.mk)
 
 include device/samsung/msm7x27-common/common.mk
-
-DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
-
-## Audio
-PRODUCT_PACKAGES += \
-    audio.primary.tass \
-    audio_policy.tass
-
-## Camera
-PRODUCT_PACKAGES += \
-    camera.tass
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
@@ -35,5 +24,3 @@ PRODUCT_COPY_FILES += \
 
 ## LDPI assets
 PRODUCT_AAPT_PREF_CONFIG := ldpi
-
-
