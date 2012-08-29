@@ -17,6 +17,15 @@ $(call inherit-product, vendor/samsung/tass/vendor_blobs.mk)
 
 include device/samsung/msm7x27-common/common.mk
 
+## Audio
+PRODUCT_PACKAGES += \
+    audio.primary.tass \
+    audio_policy.tass
+
+## Camera
+PRODUCT_PACKAGES += \
+    camera.tass
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/init.gt-s5570board.rc:root/init.gt-s5570board.rc \
