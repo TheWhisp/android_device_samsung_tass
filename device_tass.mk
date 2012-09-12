@@ -20,11 +20,6 @@ include device/samsung/msm7x27-common/common.mk
 ## Device specific overlay
 DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
 
-## Audio
-PRODUCT_PACKAGES += \
-    audio.primary.tass \
-    audio_policy.tass
-
 ## Camera
 PRODUCT_PACKAGES += \
     camera.tass
@@ -36,4 +31,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
 
 ## LDPI assets
-PRODUCT_AAPT_PREF_CONFIG := ldpi
+PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi normal
