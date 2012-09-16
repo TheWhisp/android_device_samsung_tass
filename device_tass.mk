@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
    audio.primary.tass \
    audio_policy.tass
 
+## Lights
+PRODUCT_PACKAGES += \
+   lights.tass
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/init.gt-s5570board.rc:root/init.gt-s5570board.rc \
