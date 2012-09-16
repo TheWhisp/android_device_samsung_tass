@@ -36,5 +36,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
 
 ## LDPI assets
-PRODUCT_AAPT_CONFIG := ldpi mdpi normal
 PRODUCT_AAPT_PREF_CONFIG := ldpi
