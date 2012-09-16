@@ -24,6 +24,11 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
 PRODUCT_PACKAGES += \
     camera.tass
 
+## Audio
+PRODUCT_PACKAGES += \
+   audio.primary.tass \
+   audio_policy.tass
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/init.gt-s5570board.rc:root/init.gt-s5570board.rc \
@@ -31,4 +36,5 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
 
 ## LDPI assets
-PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi normal
+PRODUCT_AAPT_CONFIG := ldpi mdpi normal
+PRODUCT_AAPT_PREF_CONFIG := ldpi
