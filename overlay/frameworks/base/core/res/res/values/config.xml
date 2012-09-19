@@ -43,13 +43,13 @@
         <item>"bnep\\d"</item>
     </string-array>
 
-    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
 
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
      <!-- Values greater or equal to 0 will enable electronbeam screen-on
          animation with the specified delay (in milliseconds), -1 will disable the animation -->
-    <integer name="config_screenOnAnimation">250</integer>
+    <integer name="config_screenOnAnimation">0</integer>
 
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
