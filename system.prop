@@ -10,6 +10,11 @@ media.stagefright.enable-player=true
 video.accelerate.hw=1
 debug.sf.hw=1
 persist.sys.use_dithering=0
+debug.gr.numframebuffers=2
+debug.qctwa.statusbar=1
+debug.qctwa.preservebuf=1
+com.qc.hardware=true
+ro.max.fling_velocity=4000
 
 ## RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
@@ -25,7 +30,7 @@ DEVICE_PROVISIONED=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=35
+wifi.supplicant_scan_interval=60
 
 ## Dalvik
 dalvik.vm.lockprof.threshold=500

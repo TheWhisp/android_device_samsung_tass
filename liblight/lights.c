@@ -40,7 +40,7 @@ static int write_int(char const *path, int value)
 
 	already_warned = 0;
 
-	ALOGV("write_int: path %s, value %d", path, value);
+	LOGV("write_int: path %s, value %d", path, value);
 	fd = open(path, O_RDWR);
 
 	if (fd >= 0) {
@@ -51,7 +51,7 @@ static int write_int(char const *path, int value)
 		return amt == -1 ? -errno : 0;
 	} else {
 		if (already_warned == 0) {
-			ALOGE("write_int failed to open %s\n", path);
+			LOGE("write_int failed to open %s\n", path);
 			already_warned = 1;
 		}
 		return -errno;
@@ -85,7 +85,7 @@ static int set_light_backlight(struct light_device_t *dev,
 
 static int close_lights(struct light_device_t *dev)
 {
-	ALOGV("close_light is called");
+	LOGV("close_light is called");
 	if (dev)
 		free(dev);
 
@@ -98,7 +98,7 @@ static int open_lights(const struct hw_module_t *module, char const *name,
 	int (*set_light)(struct light_device_t *dev,
 		struct light_state_t const *state);
 
-	ALOGV("open_lights: open with %s", name);
+	LOGV("open_lights: open with %s", name);
 
 	if (0 == strcmp(LIGHT_ID_BACKLIGHT, name))
 		set_light = set_light_backlight;
@@ -125,7 +125,7 @@ static struct hw_module_methods_t lights_module_methods = {
 	.open =  open_lights,
 };
 
-struct hw_module_t HAL_MODULE_INFO_SYM = {
+const struct hw_module_t HAL_MODULE_INFO_SYM = {
 	.tag = HARDWARE_MODULE_TAG,
 	.version_major = 1,
 	.version_minor = 0,
