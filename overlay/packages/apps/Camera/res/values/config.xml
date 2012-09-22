@@ -18,14 +18,8 @@
 -->
 
 <resources>
-    <!-- Allows setting video size before recording starts -->
-    <!-- Needs kernel changes -->
-    <bool name="needsEarlyVideoSize">true</bool>
-    <!-- HTC Camcorder Mode -->
-    <!-- Possibly needs kernel changes -->
-    <bool name="needsHTCCamMode">false</bool>
-    <!-- Restart the preview on picture taken -->
-    <bool name="restartPreviewOnPictureTaken">true</bool>
-    <!-- Enable zero-shutter-lag -->
+    <!-- Don't mess with the preview size, always use preferred size from parameters -->
+    <bool name="alwaysUsePreferredPreviewSize">true</bool>
+    <!-- Use ZSL mode -->
     <bool name="enableZSL">true</bool>
 </resources>
