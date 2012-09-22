@@ -29,9 +29,10 @@ PRODUCT_PACKAGES += \
    audio.primary.tass \
    audio_policy.tass
 
-## Lights
+## Lights & GPS
 PRODUCT_PACKAGES += \
-   lights.tass
+   lights.tass \
+   gps.tass
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
