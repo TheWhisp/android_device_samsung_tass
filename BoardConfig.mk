@@ -26,9 +26,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_tass_defconfig
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := tass,GT-S5570
 
-## GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := tass
-
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"

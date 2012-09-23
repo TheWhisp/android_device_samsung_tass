@@ -25,15 +25,14 @@
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
-        <item>"usb\\d"</item>
-        <item>"rndis\\d"</item>
+        <item>"rndis0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"wlan\\d"</item>
+        <item>"wlan0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
@@ -42,6 +41,19 @@
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
         <item>"bnep\\d"</item>
     </string-array>
+
+    <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
+    <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
+    <!== [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
+    <integer-array translatable="false" name="config_tether_upstream_types">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>7</item>
+    </integer-array>
+
+    <!-- The default iface on which to monitor data use -->
+    <string name="config_datause_iface">pdp0</string>
 
     <bool name="config_automatic_brightness_available">false</bool>
 
@@ -53,7 +65,7 @@
 
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
-    <integer name="config_backKillTimeout">1000</integer>
+    <integer name="config_backKillTimeout">1500</integer>
 
     <bool name="config_animateScreenLights">false</bool>
     
@@ -67,7 +79,7 @@
 
     <!-- Boolean indicating if current platform supports bluetooth wide band
          speech -->
-    <bool name="config_bluetooth_wide_band_speech">true</bool>
+    <bool name="config_bluetooth_wide_band_speech">false</bool>
 
     <!-- Boolean indicating if current platform supports quick switch-on/off of
          Bluetooth Module -->
@@ -89,10 +101,4 @@
     
      <!-- Boolean to enable stk functionality on Samsung phones -->
     <bool name="config_samsung_stk">true</bool>
-
-    <!-- Component name of the service providing network location support. -->
-    <string name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</string>
-
-    <!-- Component name of the service providing geocoder API support. -->
-    <string name="config_geocodeProvider">com.google.android.location.GeocodeProvider</string>
 </resources>

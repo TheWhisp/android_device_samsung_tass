@@ -1,4 +1,3 @@
-
 #
 # system.prop for GT-S5570
 #
@@ -6,21 +5,33 @@
 ## Graphics
 ro.opengles.version=131072
 ro.sf.lcd_density=120
-media.stagefright.enable-player=true
 video.accelerate.hw=1
 debug.sf.hw=1
-persist.sys.use_dithering=0
+persist.sys.use_dithering=2
+
+## Media
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=false
+media.stagefright.enable-record=true
+
+## Qualcomm
 debug.gr.numframebuffers=2
 debug.qctwa.statusbar=1
 debug.qctwa.preservebuf=1
 com.qc.hardware=true
+
+## View configuration for QVGA.
+view.fading_edge_length=8
+view.touch_slop=15
+view.minimum_fling_velocity=25
 ro.max.fling_velocity=4000
+view.scroll_friction=0.008
 
 ## RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
-ro.telephony.default_network=0
-ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.telephony.ril_class=JellaxyRIL
 mobiledata.interfaces=pdp0,gprs,ppp0
@@ -30,24 +41,29 @@ DEVICE_PROVISIONED=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=60
 
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapstartsize=8m	
-dalvik.vm.heapgrowthlimit=32m	
+dalvik.vm.heapstartsize=6m	
+dalvik.vm.heapgrowthlimit=28m	
 dalvik.vm.heapsize=64m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.verify_bytecode=false
 dalvik.vm.checkjni=0
-ro.kernel.android.checkjni=0
 
-## Mass storage
+## USB
 persist.sys.usb.config=adb,mass_storage
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
 ## Camcorder
 debug.camcorder.disablemeta=1
+
+## Force Launcher into memory
+ro.HOME_APP_ADJ=1
+
+## Google's location features
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
