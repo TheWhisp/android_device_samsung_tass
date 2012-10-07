@@ -33,7 +33,7 @@ view.scroll_friction=0.008
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 ro.ril.gprsclass=10
-ro.telephony.ril_class=JellaxyRIL
+ro.telephony.ril_class=SamsungMSMRIL
 mobiledata.interfaces=pdp0,gprs,ppp0
 ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
@@ -61,7 +61,6 @@ ro.vold.umsdirtyratio=20
 ## Camcorder
 debug.camcorder.disablemeta=1
 
-## Hardware
 ## Hardware info
 ro.device.gpu=Adreno 200
 ro.device.rear_cam=3.2 MP
