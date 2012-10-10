@@ -18,8 +18,12 @@
 -->
 
 <resources>
-    <!-- Don't mess with the preview size, always use preferred size from parameters -->
-    <bool name="alwaysUsePreferredPreviewSize">true</bool>
+    <!-- Restart the preview on picture taken -->
+    <bool name="restartPreviewOnPictureTaken">true</bool>
+    <!-- Samsung Camcorder Mode -->
+    <bool name="needsSamsungCamMode">true</bool>
+    <!-- Samsung Camera Settings -->
+    <bool name="hasSamsungCamSettings">true</bool>
     <!-- Use ZSL mode -->
     <bool name="enableZSL">true</bool>
 </resources>
