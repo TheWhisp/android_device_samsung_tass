@@ -21,6 +21,8 @@ debug.gr.numframebuffers=3
 debug.qctwa.statusbar=1
 debug.qctwa.preservebuf=1
 com.qc.hardware=true
+debug.enabletr=false
+debug.hwui.render_dirty_regions=false
 
 ## View configuration for QVGA.
 view.fading_edge_length=8
@@ -45,9 +47,9 @@ wifi.interface=wlan0
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapstartsize=6m	
-dalvik.vm.heapgrowthlimit=28m	
-dalvik.vm.heapsize=64m
+dalvik.vm.heapstartsize=5m	
+dalvik.vm.heapgrowthlimit=24m	
+dalvik.vm.heapsize=48m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.verify_bytecode=false
@@ -60,9 +62,3 @@ ro.vold.umsdirtyratio=20
 
 ## Camcorder
 debug.camcorder.disablemeta=1
-
-## Hardware info
-ro.device.gpu=Adreno 200
-ro.device.rear_cam=3.2 MP
-ro.device.front_cam=n/a
-ro.device.screen_res=240x320
