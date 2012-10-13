@@ -13,7 +13,7 @@ persist.sys.use_dithering=2
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
-media.stagefright.enable-http=false
+media.stagefright.enable-http=true
 media.stagefright.enable-record=true
 
 ## Qualcomm
