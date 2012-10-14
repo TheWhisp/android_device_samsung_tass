@@ -77,9 +77,9 @@
     use cases -->
     <bool name="config_bluetooth_sco_off_call">true</bool>
 
-    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>
+    <string name="config_networkLocationProvider">com.google.android.location</string>
 
-    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>
+    <string name="config_geocodeProvider">com.google.android.location</string>
 
     <!-- Boolean indicating if current platform supports bluetooth wide band
          speech -->
