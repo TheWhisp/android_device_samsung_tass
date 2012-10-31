@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/ramdisk/init.gt-s5570board.rc:root/init.gt-s5570board.rc \
-    device/samsung/tass/ramdisk/init.gt-s5570board.usb.rc:root/init.gt-s5570board.usb.rc \
-    device/samsung/tass/ramdisk/ueventd.gt-s5570board.rc:root/ueventd.gt-s5570board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5570board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5570board.usb.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5570board.rc \
     device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
