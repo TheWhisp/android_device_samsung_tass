@@ -18,7 +18,7 @@ $(call inherit-product, vendor/samsung/tass/vendor_blobs.mk)
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
-DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/tass/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
@@ -38,4 +38,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5570board.rc \
     device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5570board.usb.rc \
     device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5570board.rc \
-    device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
+    device/samsung/tass/TASS.rle:root/TASS.rle
