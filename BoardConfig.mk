@@ -1,4 +1,4 @@
-# Copyright (C) 2007 The Android Open Source Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,8 +28,3 @@ TARGET_OTA_ASSERT_DEVICE := tass,GT-S5570
 
 ## Recovery
 BOARD_LDPI_RECOVERY := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/tass/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/tass/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/tass/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/tass/recovery/recovery.fstab
